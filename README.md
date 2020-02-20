@@ -5,11 +5,10 @@
 A package that can be used to manage a list of number counters. The user can increase or decrease a single one or all of them.
 By default, a single counter is created so the user can get started right away.
 
-## Behaviour driven testing
 
-### User Scenario 1
+## User Scenario 1
 
-#### User Story
+### User Story
 
 *As a* user,
 
@@ -17,7 +16,7 @@ By default, a single counter is created so the user can get started right away.
 
 *so that* I can keep track of received items
 
-#### Behaviour description
+### Behaviour description
 
 *Given* a counter
 
@@ -25,7 +24,7 @@ By default, a single counter is created so the user can get started right away.
 
 *Then* the new value is by 1 higher than the old value
 
-#### Ginkgo
+### Ginkgo
 
 ```go
 var _ = Describe("Counterlist", func() {
@@ -47,7 +46,7 @@ var _ = Describe("Counterlist", func() {
 })
 ```
 
-#### Bootstrapping the tests
+### Bootstrapping the tests
 
 ```
 $ cd pkg/count
@@ -60,14 +59,14 @@ find .
 ./counterlist_test.go
 ```
 
-#### Corner cases
+### Corner cases
 
 * User fetches value outside the range of the list
 
 
-### User Scenario 2
+## User Scenario 2
 
-#### User Story
+### User Story
 
 *As a* user,
 
@@ -75,7 +74,7 @@ find .
 
 *so that* I can track removed items
 
-#### Behaviour description
+### Behaviour description
 
 *Given* a counter
 
@@ -83,9 +82,9 @@ find .
 
 *Then* the new value is by 1 lower than the old value
 
-### User Scenario 3
+## User Scenario 3
 
-#### User Story
+### User Story
 
 *As a* user,
 
@@ -93,9 +92,9 @@ find .
 
 *so that* I realize when I accidentally try to remove items from an empty counter
 
-### User Scenario 4
+## User Scenario 4
 
-#### User Story
+### User Story
 
 *As a* user,
 
@@ -103,7 +102,7 @@ find .
 
 *so that* they are already initialized with the first item
 
-#### Behaviour description
+### Behaviour description
 
 *Given* a new counter
 
@@ -111,9 +110,9 @@ find .
 
 *Then* the starting value is 1
 
-### User Scenario 5
+## User Scenario 5
 
-#### User Story
+### User Story
 
 *As a* user,
 
@@ -121,7 +120,7 @@ find .
 
 *so that* I can add items simulateously
 
-#### Behaviour description
+### Behaviour description
 
 *Given* a multiple counters
 
