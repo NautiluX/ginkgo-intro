@@ -37,7 +37,7 @@ By default, a single counter is created so the user can get started right away.
 ```go
 var _ = Describe("Counterlist", func() {
 	var (
-		counter CounterList
+		counter *CounterList
 	)
 	Context("Single counter", func(){
 		BeforeEach(func(){                                // Given a counter
@@ -130,7 +130,7 @@ find .
 
 ### Behaviour description
 
-*Given* a multiple counters
+*Given* multiple counters
 
 *when* all counters are increased at once
 
