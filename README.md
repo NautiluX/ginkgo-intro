@@ -1,5 +1,13 @@
 # Ginko Introduction
 
+## Installing ginkgo and gomega
+
+
+```bash
+$ go get github.com/onsi/ginkgo/ginkgo
+$ go get github.com/onsi/gomega/...
+```
+
 ## Scenario
 
 A package that can be used to manage a list of number counters. The user can increase or decrease a single one or all of them.
